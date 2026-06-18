@@ -202,11 +202,9 @@
     transition: padding-left 140ms ease, background 140ms ease, color 140ms ease;
   }
   .prod__row:first-child { border-top: 1px dotted var(--rule); }
-  .prod__row:hover { padding-left: 12px; background: rgba(154,59,27,0.05); }
   .prod__n { font-weight: 700; color: var(--accent); white-space: nowrap; }
   .prod__d { color: var(--ink-2); font-size: 14px; }
   .prod__arr { color: var(--ink-3); font-size: 14px; transition: color 140ms ease; }
-  .prod__row:hover .prod__arr { color: var(--accent); }
 
   /* contact links */
   .contact { display: grid; gap: 0; }
@@ -216,12 +214,9 @@
     transition: padding-left 140ms ease, color 140ms ease, background 140ms ease;
   }
   .contact a:first-child { border-top: 1px solid var(--rule); }
-  .contact a:hover { padding-left: 14px; background: rgba(154,59,27,0.05); color: var(--accent); }
   .contact a .ch { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); }
-  .contact a:hover .ch { color: var(--accent); }
   .contact a .val { font-weight: 500; }
   .contact a .val .arr { color: var(--ink-3); margin-left: 8px; }
-  .contact a:hover .val .arr { color: var(--accent); }
 
   .status {
     margin-top: 22px; display: inline-flex; align-items: center; gap: 9px;
@@ -240,6 +235,15 @@
     padding: clamp(22px, 4vw, 34px) clamp(26px, 4vw, 44px) clamp(26px, 4vw, 44px);
     display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
     font-size: 11.5px; color: var(--ink-3); letter-spacing: 0.04em;
+  }
+
+  /* hover affordances only where a real pointer exists — no sticky-hover or layout shift on touch */
+  @media (hover: hover) {
+    .prod__row:hover { padding-left: 12px; background: rgba(154,59,27,0.05); }
+    .prod__row:hover .prod__arr { color: var(--accent); }
+    .contact a:hover { padding-left: 14px; background: rgba(154,59,27,0.05); color: var(--accent); }
+    .contact a:hover .ch { color: var(--accent); }
+    .contact a:hover .val .arr { color: var(--accent); }
   }
 
   @media (max-width: 540px) {
