@@ -242,6 +242,12 @@
   }
 
   @media (max-width: 540px) {
+    /* drop the frame & outer padding so content runs edge-to-edge */
+    body { padding: 0; }
+    .frame { border: none; max-width: none; }
+    .frame__inner { padding: 22px 18px 0; }
+    .foot { padding: 20px 18px 28px; }
+
     .help__cmd { grid-template-columns: 1fr; gap: 2px; }
     .prod__row { grid-template-columns: 1fr auto; row-gap: 2px; }
     .prod__d { grid-column: 1 / -1; }
