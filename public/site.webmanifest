@@ -1,0 +1,15 @@
+{
+  "name": "QuickBits",
+  "short_name": "QuickBits",
+  "description": "An independent software studio building developer tools and products.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#E8E4D8",
+  "theme_color": "#E8E4D8",
+  "icons": [
+    { "src": "/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/brand/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/brand/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

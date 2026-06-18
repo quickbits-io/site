@@ -1,0 +1,4 @@
+# Cloudflare Pages project config — https://developers.cloudflare.com/pages/functions/wrangler-configuration/
+name = "quickbits-site"
+compatibility_date = "2026-06-18"
+pages_build_output_dir = "public"
